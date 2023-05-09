@@ -500,6 +500,119 @@ button {
      width: 100%;
 }
 
+#work {
+     background-color: #f9f9f9;
+     padding: 60px 0;
+   }
+   
+#playlist {
+     margin: 0 auto;
+     text-align: center;
+     position: absolute;
+   }
+   
+#slider {
+     display: flex;
+     flex-wrap: nowrap;
+     overflow-x: scroll;
+     scroll-snap-type: x mandatory;
+     scroll-behavior: smooth;
+     -webkit-overflow-scrolling: touch;
+     margin-bottom: 20px;
+   }
+   
+#slider::-webkit-scrollbar {
+     width: 10px;
+     height: 10px;
+   }
+   
+#slider::-webkit-scrollbar-thumb {
+     background: #c1c1c1;
+     border-radius: 10px;
+   }
+   
+#slider::-webkit-scrollbar-track {
+     background: #f1f1f1;
+     border-radius: 10px;
+   }
+   
+.audio {
+     position: relative;
+     display: inline-block;
+     min-width: 150px;
+     height: 150px;
+     margin-right: 20px;
+     scroll-snap-align: start;
+     background-color: #fff;
+     border-radius: 10px;
+     text-align: center;
+     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+     transition: transform .2s;
+   }
+   
+.audio:hover {
+     transform: scale(1.1);
+   }
+   
+.audio.active {
+     box-shadow: 0px 3px 15px rgba(0,0,0,0.4);
+   }
+   
+.audio__info {
+     padding: 20px;
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     color: #333;
+   }
+   
+.audio__name {
+     font-size: 20px;
+     margin-bottom: 10px;
+     font-weight: bold;
+     text-align: left;
+   }
+   
+.audio__duration {
+     font-size: 16px;
+     margin-bottom: 10px;
+     text-align: left;
+   }
+   
+.audio__play {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background-color: #fff;
+     border: none;
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+     transition: transform .2s;
+   }
+   
+.audio__play:hover {
+     transform: scale(1.1);
+   }
+   
+#controls {
+     text-align: center;
+   }
+   
+#play-pause {
+     border: none;
+     background-color: #fff;
+     font-size: 32px;
+     color: #333;
+     cursor: pointer;
+     transition: transform .2s;
+   }
+   
+#play-pause:hover {
+     transform: scale(1.1);
+   }
 
 /** end work section **/
 
@@ -586,6 +699,26 @@ button {
 .copyright a:hover {
      color: #000;
 }
+#slider {
+     height: 200px;
+     width: 10px;
+     background-color: #ccc;
+     position: relative;
+     margin-top: 10px;
+     cursor: pointer;
+ }
+ #slider:before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: -5px;
+     height: 20px;
+     width: 20px;
+     border-radius: 50%;
+     background-color: #fff;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+     cursor: pointer;
+ }
 
 
 /** end footer **/
